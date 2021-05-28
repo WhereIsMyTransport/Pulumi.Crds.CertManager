@@ -15,6 +15,7 @@ I modified it slightly so take care if re-generating it.
 
  -- in KubernetesResources.cs: added
 
+ ```
 public class CrdsResourceTypeAttribute : ResourceTypeAttribute
 {
     public CrdsResourceTypeAttribute(string value)
@@ -23,9 +24,16 @@ public class CrdsResourceTypeAttribute : ResourceTypeAttribute
             
     }
 }
+```
 
  -- wherever it complained about missing refereences, added 
  
  using Pulumi.Crd;
 
  (changed crds to Crd namespace too)
+
+# Publishing
+
+For publishing instructions, see https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-visual-studio?tabs=netcore-cli
+
+use our own nuget source at https://whereismytransport.pkgs.visualstudio.com/_packaging/Stable/nuget/v3/index.json
