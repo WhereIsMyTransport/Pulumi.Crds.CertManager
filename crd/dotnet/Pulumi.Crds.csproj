@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>WhereIsMyTransport Ltd.</Authors>
+    <Company>WhereIsMyTransport Ltd.</Company>
+    <Description>Pulumi Crds for CertManager in C#</Description>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/WhereIsMyTransport/Pulumi.Crds.CertManager</PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageId>Pulumi.Crds.CertManager</PackageId>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Product>WhereIsMyTransport Ltd.</Product>
+    <Copyright>Copyright © 2021</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pulumi.Kubernetes" Version="3.*" ExcludeAssets="contentFiles" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
