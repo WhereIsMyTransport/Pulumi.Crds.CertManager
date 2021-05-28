@@ -11,7 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution files", "solution 
 		LICENSE = LICENSE
 		Nuget.config = Nuget.config
 		README.md = README.md
-		TransitApi.Sdk.nuspec = TransitApi.Sdk.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "crd", "crd", "{DE1FC7AB-B97A-4EA1-A79F-BE5B6308BE2E}"
