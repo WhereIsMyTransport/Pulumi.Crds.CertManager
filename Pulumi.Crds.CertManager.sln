@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pulumi.Crds", "crd\dotnet\Pulumi.Crds.csproj", "{D3B3C1F6-E619-456B-B664-C7FB1B5A4E6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution files", "solution files", "{0C55740E-FFF0-4F1E-AE09-447F652BF3FC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		Nuget.config = Nuget.config
+		README.md = README.md
+		TransitApi.Sdk.nuspec = TransitApi.Sdk.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "crd", "crd", "{DE1FC7AB-B97A-4EA1-A79F-BE5B6308BE2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{BFDC2106-44EC-4A30-9D61-968E1DF2194E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3B3C1F6-E619-456B-B664-C7FB1B5A4E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B3C1F6-E619-456B-B664-C7FB1B5A4E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B3C1F6-E619-456B-B664-C7FB1B5A4E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B3C1F6-E619-456B-B664-C7FB1B5A4E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3B3C1F6-E619-456B-B664-C7FB1B5A4E6C} = {BFDC2106-44EC-4A30-9D61-968E1DF2194E}
+		{BFDC2106-44EC-4A30-9D61-968E1DF2194E} = {DE1FC7AB-B97A-4EA1-A79F-BE5B6308BE2E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FACB4C91-1DC9-495F-8009-FDC0573361A9}
+	EndGlobalSection
+EndGlobal
