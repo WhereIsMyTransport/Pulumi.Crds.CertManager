@@ -13,7 +13,7 @@ namespace Pulumi.Crds
 
         private static string GetVersion()
         {
-            const string UtilitiesType = "Pulumi.Kubernetes.Crd.Utilities";
+            const string UtilitiesType = "Pulumi.Kubernetes.Utilities";
             const string VersionProperty = "Version";
 
             Type? type = Assembly.GetAssembly(typeof(Provider))?.GetType(UtilitiesType);
