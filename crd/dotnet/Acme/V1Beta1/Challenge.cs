@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
-using Pulumi.Crd;
+using Pulumi.Crds;
 
 namespace Pulumi.Crds.Acme.V1Beta1
 {
@@ -65,7 +65,7 @@ namespace Pulumi.Crds.Acme.V1Beta1
         {
             var defaultOptions = new CustomResourceOptions
             {
-                Version = Crd.Utilities.Version,
+                Version = Crds.Utilities.Version,
             };
             var merged = CustomResourceOptions.Merge(defaultOptions, options);
             // Override the ID if one was specified for consistency with other language SDKs.

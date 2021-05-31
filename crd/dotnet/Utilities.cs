@@ -5,9 +5,9 @@ using System;
 using System.Reflection;
 using Pulumi.Kubernetes;
 
-namespace Pulumi.Crd
+namespace Pulumi.Crds
 {
-    static class Utilities
+    public static class Utilities
     {
         public static string Version { get; } = GetVersion();
 

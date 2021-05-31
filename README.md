@@ -28,7 +28,7 @@ public class CrdsResourceTypeAttribute : ResourceTypeAttribute
 
  -- wherever it complained about missing refereences, added 
  
- using Pulumi.Crd;
+ using Pulumi.Crds;
 
  (changed crds to Crd namespace too)
 
